@@ -76,11 +76,11 @@ def setup_logging(name: str) -> logging.Logger:
     logger.setLevel(logging.INFO)
     # Set the minimum log level to INFO.
     # This means:
-    #   logger.debug("x")    → NOT printed (below INFO threshold)
-    #   logger.info("x")     → printed
-    #   logger.warning("x")  → printed
-    #   logger.error("x")    → printed
-    #   logger.critical("x") → printed
+    #   logger.debug("x")     NOT printed (below INFO threshold)
+    #   logger.info("x")      printed
+    #   logger.warning("x")   printed
+    #   logger.error("x")     printed
+    #   logger.critical("x")  printed
     # We use DEBUG=False because debug logs are extremely verbose
     # and would flood the terminal during a real analysis run.
 
