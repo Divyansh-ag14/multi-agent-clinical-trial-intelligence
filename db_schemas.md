@@ -137,7 +137,7 @@ nct_id      : NCT04788680        links back to studies table
 chunk_text  : "SPONSOR: Novo Nordisk
                PRIMARY OUTCOME: Reduction in HbA1c at 26 weeks
                RESULTS POSTED: NO"
-embedding   : [0.023, -0.041, 0.891, ...]   3072 numbers
+embedding   : [0.023, -0.041, 0.891, ...]   1536 numbers
 chunk_index : 0                  position in the document
 source      : study              came from ClinicalTrials.gov
 ```
