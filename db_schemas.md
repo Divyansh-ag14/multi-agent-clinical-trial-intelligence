@@ -143,13 +143,13 @@ source      : study              came from ClinicalTrials.gov
 ```
 
 **Why we need it:**
-This is the heart of semantic search. When an agent asks "find me studies where the sponsor never posted results", the system converts that question into 3072 numbers and finds the chunks whose numbers are most similar. This is called vector similarity search — and it only works because of this table.
+This is the heart of semantic search. When an agent asks "find me studies where the sponsor never posted results", the system converts that question into 1536 numbers and finds the chunks whose numbers are most similar. This is called vector similarity search — and it only works because of this table.
 
 **The special column:**
 `embedding VECTOR(1536)`: this is what pgvector adds. A normal PostgreSQL column stores text or numbers. This column stores 1536 floating point numbers representing the meaning of the text. No other relational database can do this natively.
 
 **Who writes to it:**
-`vector_store.py` during processing — after chunker.py and embedder.py have done their work.
+`vector_store.py` during processing: after chunker.py and embedder.py have done their work.
 
 **Who reads from it:**
 Every agent via the search tools. This is the most frequently queried table in the entire system.
