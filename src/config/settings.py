@@ -86,7 +86,6 @@ class Settings(BaseSettings):
 
     openai_embedding_model: str = Field(
         default="text-embedding-3-small",
-        # Use this when embedding quality matters more than cost.
         description="OpenAI model used to generate the vector embeddings"
     )
 
