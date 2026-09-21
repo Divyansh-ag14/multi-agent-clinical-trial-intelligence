@@ -1,5 +1,4 @@
 
-#   This is the first file that talks to the outside world.
 #   It connects to ClinicalTrials.gov: free US government database
 #   that stores every registered medical research study.
 #   It downloads study records and returns them as Python dictionaries.
