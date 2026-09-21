@@ -1,4 +1,8 @@
-
+# PURPOSE:
+#   This file talks to PubMed: a free database run by the US government
+#   that stores millions of published medical research papers.
+#   It finds and downloads research papers that reference specific
+#   clinical trials from ClinicalTrials.gov.
 #
 # WHY WE NEED THIS:
 #   ClinicalTrials.gov tells us what a study PROMISED to measure.
